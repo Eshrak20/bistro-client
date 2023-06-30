@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.drawer-side a.active {
+    color:white
+}
+.drawer-side a {
+    background-color: transparent;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+     
+    }
