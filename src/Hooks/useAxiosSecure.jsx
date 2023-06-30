@@ -6,7 +6,7 @@
 // import axios from 'axios';
 
 // const axiosSecure = axios.create({
-//   baseURL: 'https://bistro-boss-server-final-eshrakg62-gmailcom.vercel.app', 
+//   baseURL: 'https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app', 
 // });
 
 // const useAxiosSecure = () => {
@@ -45,7 +45,7 @@ import useAuth from './useAuth';
 import axios from 'axios';
 
 const axiosSecure = axios.create({
-  baseURL: 'https://bistro-boss-server-final-eshrakg62-gmailcom.vercel.app', 
+  baseURL: 'https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app', 
 });
 
 const useAxiosSecure = () => {

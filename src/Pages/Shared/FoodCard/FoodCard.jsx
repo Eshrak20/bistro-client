@@ -19,7 +19,7 @@ const FoodCard = ({ item }) => {
   //   if (user && user.email) {
   //     const orderItem = { name, image, price, email: user.email };
   //     axios
-  //       .post("https://bistro-boss-server-final-eshrakg62-gmailcom.vercel.app/carts", orderItem, {
+  //       .post("https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/carts", orderItem, {
   //         headers: {
   //           "Content-Type": "application/json",
   //         },
@@ -56,11 +56,12 @@ const FoodCard = ({ item }) => {
   // };
   const handleAddToCart = () => {
     console.log(item);
+    console.log(cart);
     if (user && user.email) {
       const orderItem = { _id,name, image, price, email: user.email };
   
       // Check if the item already exists in the cart
-      const existingCartItem = cart.find((cartItem) => cartItem._id === item._id);
+      const existingCartItem = cart.find((cartItem) => cartItem?._id === item._id);
   
       if (existingCartItem) {
         // Show a message to the user indicating that the item is already in the cart
@@ -75,7 +76,7 @@ const FoodCard = ({ item }) => {
       }
   
       axios
-        .post("https://bistro-boss-server-final-eshrakg62-gmailcom.vercel.app/carts", orderItem, {
+        .post("https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/carts", orderItem, {
           headers: {
             "Content-Type": "application/json",
           },

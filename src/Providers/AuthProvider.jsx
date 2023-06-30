@@ -63,11 +63,11 @@ const AuthProvider = ({ children }) => {
       //get and set to token
       if (currentUser) 
       {
-        axios.post('https://bistro-boss-server-final-eshrakg62-gmailcom.vercel.app/jwt', {
+        axios.post('https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/jwt', {
           email: currentUser.email,
         })
         .then(data => {
-          // console.log(data.data.token);
+          console.log(data.data.token);
           localStorage.setItem('access-token', data.data.token)
           setLoading(false);
         })

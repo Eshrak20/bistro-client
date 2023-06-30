@@ -17,7 +17,7 @@ const Testiomonial = () => {
   
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("https://bistro-boss-server-final-eshrakg62-gmailcom.vercel.app/reviews")
+    fetch("https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

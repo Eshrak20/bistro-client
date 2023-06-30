@@ -26,7 +26,7 @@ const SignUp = () => {
       await updateUserProfile(data.name, data.photoURL);
 
       const saveUser = { name: data.name, email: data.email };
-      const response = await fetch('https://bistro-boss-server-final-eshrakg62-gmailcom.vercel.app/users', {
+      const response = await fetch('https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,6 +36,7 @@ const SignUp = () => {
       
       const responseData = await response.json();
       if (responseData.insertedId) {
+        console.log(responseData);
         Swal.fire({
           icon: 'success',
           title: 'Success',
