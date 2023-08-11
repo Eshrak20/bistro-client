@@ -49,7 +49,7 @@ const UserHome = () => {
             <img
               className="rounded-full ring ring-primary w-1/2 mb-6 border-stone-950"
               src={user.photoURL || defaultPhotoURL}
-              alt=""
+              alt="photoURL "
             />
             <p className="text-4xl">{user.displayName}</p>
           </div>

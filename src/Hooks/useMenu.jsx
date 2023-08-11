@@ -8,7 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 //   } = useQuery({
 //     queryKey: ["menu"],
 //     queryFn: async () => {
-//       const res = await fetch("https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/menu");
+//       const res = await fetch("http://localhost:5000/menu");
 //       return res.json();
 //     },
 //   });
@@ -24,7 +24,7 @@ const useMenu = () => {
     queryKey: ["menu"],
     queryFn: async () => {
       try {
-        const res = await fetch("https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/menu");
+        const res = await fetch("http://localhost:5000/menu");
         if (!res.ok) {
           throw new Error("Error fetching menu data");
         }

@@ -19,7 +19,7 @@ const FoodCard = ({ item }) => {
   //   if (user && user.email) {
   //     const orderItem = { name, image, price, email: user.email };
   //     axios
-  //       .post("https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/carts", orderItem, {
+  //       .post("http://localhost:5000/carts", orderItem, {
   //         headers: {
   //           "Content-Type": "application/json",
   //         },
@@ -76,7 +76,7 @@ const FoodCard = ({ item }) => {
       }
   
       axios
-        .post("https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/carts", orderItem, {
+        .post("http://localhost:5000/carts", orderItem, {
           headers: {
             "Content-Type": "application/json",
           },

@@ -26,7 +26,7 @@ const SignUp = () => {
       await updateUserProfile(data.name, data.photoURL);
 
       const saveUser = { name: data.name, email: data.email };
-      const response = await fetch('https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/users', {
+      const response = await fetch('http://localhost:5000/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

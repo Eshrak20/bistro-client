@@ -15,7 +15,7 @@ const Allusers = () => {
   });
 
   const handleMakeAdmin = (users) => {
-    fetch(`https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/users/admin/${users._id}`, {
+    fetch(`http://localhost:5000/users/admin/${users._id}`, {
       method: "PATCH",
     })
       .then((res) => res.json())
@@ -32,7 +32,7 @@ const Allusers = () => {
       });
   };
   const handleDelete = (users) => {
-    fetch(`https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/users/admin/${users._id}`, {
+    fetch(`http://localhost:5000/users/admin/${users._id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

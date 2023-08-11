@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
       //get and set to token
       if (currentUser) 
       {
-        axios.post('https://bistro-server-eshrakg62-gmailcom-eshrak.vercel.app/jwt', {
+        axios.post('http://localhost:5000/jwt', {
           email: currentUser.email,
         })
         .then(data => {
