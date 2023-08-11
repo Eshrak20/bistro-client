@@ -74,7 +74,7 @@ const SignUp = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text">Name</span>
                 </label>
                 <input
                   {...register("name", { required: true })}
