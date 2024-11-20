@@ -24,7 +24,7 @@ import PaymentHistory from "../Pages/Dashboard/Payment/PaymentHistory";
 import Contact from "../Pages/Dashboard/Contact/Contact";
 export const router = createBrowserRouter([
   {
-    path: "/",
+  path: "/",
     element: <Main></Main>,
     children: [
       {
